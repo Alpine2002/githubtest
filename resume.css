@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .left {
+    background-color: rgb(165, 245, 245);
+    color: rgba(15, 15, 15, 0.801);
+    width: 30%;
+    padding: 10px;
+    
+  }
+  
+  .right {
+    width: 70%;
+    padding: 30px;
+   
+  }
+  
+  .main {
+    column-count: 3;
+    display: flex;
+  }
+  h2{
+      color: rgb(21, 125, 134);
+  }
+  .INDIRAPIC {
+      width: 30%;
+      height: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+  
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    
+  }
+  
+  .my-info{
+      padding: 20px;
+  }
+  li{
+    text-align: left;
+  }
+  .text{
+    display:inline-block; 
+    white-space: nowrap;
+  }
+  
+  .skills{
+    display: flex;
+    text-align: center;
+  }
+  
+  .myskills{
+    flex: 50%;
+    border-color: rgb(0, 183, 255);
+    color: rgb(236, 178, 18);
+    background-color: rgb(154, 236, 223);
+  }
+  
+  .my-skills{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .material{
+    color: rgb(189, 204, 245);
+  }
