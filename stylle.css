@@ -1,0 +1,271 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    color: #324b5f;
+    margin: 0;
+}
+
+header {
+    background: #324b5f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -20px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+}
+
+label,
+p {
+    color: #617b91
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.top {
+    font-size: 20px;
+    text-align: center;
+}
+
+.top + p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #b4bec5;
+}
+
+.border-thick {
+    margin-bottom: 3px;
+    border-bottom: 4px solid #324b5f;
+}
+
+.border-thin {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    border-top: 3px solid #324b5f;
+    border-bottom: 3px solid #324b5f;
+    position: relative;
+}
+
+legend {
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+label.options {
+    display: inline;
+}
+
+.border-thin legend {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+}
+
+.border-thin legend + label {
+    clear: both;
+}
+
+.border-thin label {
+    margin-top: 15px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    font-size: 1em;
+    font-weight: 300; 
+    width: 100%;
+    border: none;
+    padding: 10px;
+    outline: 0;
+    border-radius: .3em;
+    background-color: #eef0f1;
+}
+
+.border-thin input,
+select {
+    height: 50px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 3px solid #3e71a0;
+}
+
+::-webkit-input-placeholder { 
+    text-align: right;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 12px;
+    font-style: italic;
+    color: #b4bec5;
+    margin-right: 10px;
+}
+
+select:invalid {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    color: #b4bec5;
+}
+
+option {
+    color: #000;
+}
+
+.style-select {
+    position: relative;
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 10%;
+    right: 0.2rem;
+    display: block;
+    background-color: #eef0f1; 
+    height: 80%;
+    width: 1.8rem;
+    border: none;
+    border-radius: .3em;
+    pointer-events: none;
+}
+
+.custom-arrow::before,
+.custom-arrow::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.custom-arrow::before {
+    border-left: .2rem solid transparent;
+    border-right: .2rem solid transparent;
+    border-bottom: .3rem solid #000;
+
+    top: 30%;
+    left: 50%;
+}
+
+.custom-arrow::after {
+    border-left: .2rem solid transparent;
+    border-right: .2rem solid transparent;
+    border-top: .3rem solid #000;
+
+    top: 55%;
+    left: 50%;
+}
+
+textarea {
+    resize: none;
+    height: 7rem;
+}
+
+#zip {
+    width: 50%;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #52bab3;
+    width: 100%;
+    border: none;
+    height: auto;
+    padding: 20px 15px;
+    margin-top: 20px;
+    outline: 0;
+    border-radius: .3em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 10px 10px 10px 5px;
+}
+
+.newsletter-label-one {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter-label-two {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.newsletter-label-three {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    color: #bbc6cf;
+}
+
+footer {
+    height: 250px;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .flex-style {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .flex-style label {
+        width: 25%;
+    }
+
+    .flex-style input {
+        width: 75%;
+    }
+
+    .style-select {
+        width: 75%;
+    }
+
+    #zip {
+        margin-right: auto;
+        width: 25%;
+    }
+}
