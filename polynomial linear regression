@@ -1,0 +1,26 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.array([1,2,3,5,6,7,8,9,10,12,13,14,15,16,18,19,21,22]).reshape((-1,1))
+y = np.array([100,90,80,60,60,55,60,65,70,70,75,76,78,79,90,99,99,100])
+from sklearn.linear_model import LinearRegression
+lin = LinearRegression()
+lin.fit(x,y)
+from sklearn.preprocessing import PolynomialFeatures
+poly = PolynomialFeatures(degree=3)
+x_poly = poly.fit_transform(x)
+poly.fit(x_poly,y)
+lin2 = LinearRegression()
+lin2.fit(x_poly,y)
+plt.scatter(x,y,color='blue')
+plt.plot(x,lin.predict(x),color='red')
+plt.title('Linear Regression')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salaries')
+plt.show()
+print(lin2.score(x_poly,y))
+print(lin2.intercept_)
+print(lin2.coef_)
+plt.scatter(x,y,color='blue')
+plt.plot(x,lin2.predict(x_poly),color='red')
+plt.title('Polynomial Regression')
