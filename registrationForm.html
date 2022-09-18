@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylle.css">
+    </head>
+    <body>
+        <header>
+            <h1>The Code Review</h1>
+        </header>
+        
+        <form>
+            <fieldset class="border-thick">
+                <legend class="top">Signup for our newsletter</legend>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </fieldset>
+            <fieldset class="border-thin">
+                <legend>Contact Information</legend>
+    
+                <div class="flex-style">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user_name" placeholder="Required">
+                </div>
+    
+                <div class="flex-style">
+                    <label for="mail">Email Address</label>
+                    <input type="email" id="mail" name="user_email" placeholder="Required">
+                </div>
+    
+                <div class="flex-style">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_phone">
+                </div>
+    
+                <div class="flex-style">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="user_address">
+                </div>
+    
+                <div class="flex-style">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user_city">
+                </div>
+    
+                <div class="flex-style">
+                    <label for="state">State</label>
+                    <div class="style-select">
+                        <select id="state" name="user_state" required>
+                            <option value="" disabled selected hidden>Choose
+country</option>
+                            <option value="alabama">Alabama</option>
+                            <option value="alaska">Alaska</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arkansas">Arkansas</option>
+                            <option value="california">California</option>
+                            <option value="colorado">Colorado</option>
+                            <option value="connecticut">Connecticut</option>
+                            <option value="delaware">Delaware</option>
+                            <option value="web_designer">Florida</option>
+                            <option value="georgia">Georgia</option>
+                            <option value="hawaii">Hawaii</option>
+                            <option value="idaho">Idaho</option>
+                            <option value="illinois">Illinois</option>
+                            <option value="wordpress_developer">Indiana</option>
+                            <option value="indiana">Indiana</option>
+                            <option value="iowa">Iowa</option>
+                            <option value="kansas">Kansas</option>
+                            <option value="kentucky">Kentucky</option>
+                            <option value="louisiana">Louisiana</option>
+                            <option value="maine">Maine</option>
+                            <option value="maryland">Maryland</option>
+                            <option value="massachusetts">Massachusetts</option>
+                            <option value="michigan">Michigan</option>
+                            <option value="minnesota">Minnesota</option>
+                            <option value="mississippi">Mississippi</option>
+                            <option value="missouri">Missouri</option>
+                            <option value="montana">Montana</option>
+                            <option value="nebraska">Nebraska</option>
+                            <option value="nevada">Nevada</option>
+                            <option value="new-hampshire">New Hampshire</option>
+                            <option value="new-jersey">New Jersey</option>
+                            <option value="new-mexico">New Mexico</option>
+                            <option value="new-york">New York</option>
+                            <option value="new-california">New California</option>
+                            <option value="north-dakota">North Dakota</option>
+                            <option value="ohio">Ohio</option>
+                            <option value="oklahoma">Oklahoma</option>
+                            <option value="oregon">Oregon</option>
+                            <option value="pennsylvania">Pennsylvania</option>
+                            <option value="rhode-island">Rhode Island</option>
+                            <option value="south-calorina">South Carolina</option>
+                            <option value="south-dakota">South Dakota</option>
+                            <option value="tennessee">Tennessee</option>
+                            <option value="texas">Texas</option>
+                            <option value="utah">Utah</option>
+                            <option value="vermont">Vermont</option>
+                            <option value="virginia">Virginia</option>
+                            <option value="washington">Wachington</option>
+                            <option value="west-virginia">West Virginia</option>
+                            <option value="afganisthan">afganisthan</option>
+                            <option value="japan">japan</option>
+                        </select>
+                        <span class="custom-arrow"></span>
+                    </div>
+                </div>
+    
+                <div class="flex-style">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user_zip_code">
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Newsletter</legend>
+    
+                <label class="newsletter-label-one">Select the newsletters you would like to recieve</label>
+                <input type="checkbox" id="html_news" value="html_news" name="news"><label class="options" for="html_news">HTML News</label><br>
+                <input type="checkbox" id="css_news" value="css_news" name="news"><label class="options" for="css_news">CSS News</label><br>
+                <input type="checkbox" id="javascript_news" value="javascript_news" name="news"><label class="options" for="javascript_news">Javascript News</label>
+    
+                <label  class="newsletter-label-two">Newsletter format</label>
+                <input type="radio" id="html_format" value="html_format" name="newsletter_format"><label class="options" for="html_format">HTML</label><br>
+                <input type="radio" id="plain_text_format" value="plain_text_format" name="newsletter_format"><label class="options" for="plain_text_format">Plain text</label>
+    
+                <label  class="newsletter-label-three" for="other">Other topics you'd like to hear about</label>
+                <textarea id="other" name="other-topics"></textarea>
+    
+                <button type="submit">Sign Up</button>
+            </fieldset>
+    
+            <footer>
+                <p>Copyright The Code Review</p>
+            </footer>
+        </form>
+    
+    </body>
+    </html>
